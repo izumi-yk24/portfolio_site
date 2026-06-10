@@ -59,7 +59,7 @@
           <div class="works-list">
 
             <a class="works-item" href="works01.html">
-              <div class="works-img"><img src="img/midori.png" alt="緑株式会社 メインビジュアル" /></div>
+              <div class="works-img"><img src="img/site01.png" alt="緑株式会社 メインビジュアル" /></div>
               <p class="works-name">緑株式会社(架空の企業サイト)</p>
               <p class="works-info">Design / Coding(Responsive)</p>
             </a>
@@ -152,8 +152,8 @@
 
             <div class="profile-body">
               <p>
-                愛媛県出身。大学ではメディア情報学科としてコーディングやIllustratorに触れる。大学卒業後、約3年間、総務部として商社で従事しながらも仕事で担当広報活動の1つである社内報制作がきっかけでweb業界に魅了される。
-                職業訓練校でWeb制作の基礎を習得中。
+                愛媛県出身。大学ではメディア情報学科にてコーディングやIllustratorに触れる。大学卒業後約3年間、総務部として商社で従事しながら担当広報活動の1つである社内報制作がきっかけでweb業界に魅了される。
+                現在は職業訓練校でWeb制作の基礎を習得中。（7月修了予定）
               </p>
               <p>
                 趣味は旅行、散歩、読書。
@@ -170,7 +170,14 @@
           <h2 class="title">CONTACT</h2>
           <p class="lead">
             お問い合わせは、メールにてお願いいたします。<br>
-            <a href="mailto:izumi.yk.24@gmail.com">izumi.yk.24@gmail.com</a>
+            <span id="mail-contact"></span>
+
+            <script>
+              const u = "izumi.yk.24";
+              const d = "gmail.com";
+              const el = document.getElementById("mail-contact");
+              el.innerHTML = `<a href="mailto:${u}@${d}">${u}@${d}</a>`;
+            </script>
           </p>
         </div>
       </section>
